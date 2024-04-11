@@ -2,7 +2,7 @@ status1 = "";
 results1 = [];
 
 function preload() {
-    img = loadImage('Laptop.jpeg');
+    img = loadImage('Pens.jpeg');
 }
 
 function setup() {
@@ -38,7 +38,7 @@ function draw() {
         objectDetector.detect(img, gotResult);
         for(i = 0; i < results1.length; i++) {
             document.getElementById("status").innerHTML = "Status: Object Detected";
-            document.getElementById("object_img").innerHTML = "Number of objects in the image: 1";
+            document.getElementById("object_img").innerHTML = "Number of objects in the image: 8";
             document.getElementById("num_objects").innerHTML = "Number of objects detected: " + results1.length;
             fill(r, g, b);
             percent = floor(results1[i].confidence * 100);

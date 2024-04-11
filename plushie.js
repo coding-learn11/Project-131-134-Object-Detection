@@ -2,7 +2,7 @@ status1 = "";
 results1 = [];
 
 function preload() {
-    img = loadImage('Laptop.jpeg');
+    img = loadImage('Plushie.jpeg');
 }
 
 function setup() {
